@@ -7,7 +7,8 @@ namespace Faker\Provider\en_SG;
      *  between family name and given name that are too complex to be modelled here easily. Generally the format of the data
      *  will be accurate but the actually names may sometimes be unrealistic
      *
-     * I COULD USE HELP compiling the list of Chinese Male Names.
+     * I COULD USE HELP compiling the list of Chinese Male Names.  
+     *
      */
 
 
