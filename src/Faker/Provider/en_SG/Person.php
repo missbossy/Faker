@@ -62,7 +62,7 @@ class Person extends \Faker\Provider\Person
         'Mee Chooi', 'Mee Mee', 'Mee Saw', 'Mei Fang', 'Mei Horng', 'Mei Kum', 'Mei Lin', 'Mei Ling', 'Mei Ling', 'Mei Shan', 
         'Mei Ying', 'Mei Yun', 'Meiyi', 'Meng Eng', 'Meng Lee', 'Mi Kyung', 'Mi Ling', 'Miaw Phio', 'Min Ai', 'Min Li', 
         'Min Qi', 'Min Wei', 'Ming E', 'Mui Cheng', 'Mui Chew', 'Mui Fong', 'Mui Lan', 'Mui Ling', 'Mun Yue', 'Mun-wei', 
-        'Nang Hiang', 'Ning Ning', 'Peck Sian', 'Pei Gek', 'Pei Ngee', 'Pei Pei', 'Pei Xin', 'Pei Yun', 'Peishan', 
+        'Nang Hiang', 'Ning Ning', 'Peck Sian', 'Pei Chi', 'Pei Ngee', 'Pei Pei', 'Pei Xin', 'Pei Yun', 'Peishan', 
         'Pek Ching', 'Pek Har', 'Pek Kay', 'Pek Yuen', 'Peng Mei', 'Phui Kuen', 'Pin Pin', 'Png Sim', 'Po Lyn', 'Poey Ling', 
         'Poh Chan', 'Poh Choo', 'Poh Choo', 'Poh Eng', 'Poh Fun', 'Poh Gek', 'Poh Wan', 'Poh Yen', 'Puay Sian', 'Pui Lim', 
         'Pui Yee', 'Qing Jing', 'Qing Yi', 'Quee Lan', 'Ruo Fan', 'Sai Huay', 'Sai Yang', 'Say Pin', 'See Chin', 'See Hui', 
@@ -85,8 +85,18 @@ class Person extends \Faker\Provider\Person
         'Zhiqiang', 'Zihui', 'Zu Ying'
 );
     protected static $chineseNameMale = array(
-        'Jia Shuo', 'Cheng Sean', 'Chier Wei', 'Hua Yi', 'Eng Siang', 'Hong Kiat', 'Jian Song', 'Jie Hao', 'Jinrong', 'Kai Jeremy', 'Kai Wen', 'Ming', 'Ming Gui', 'Rong', 'Ta-Wei', 'Teng Kiat', 'Wei', 'Wei Jie', 'Wei Quan', 'Wei Shaun', 'Weiliang ', 'Wei-Lun', 'Wen Loong', 'Wen Loong', 'Xianyi', 'Xin Jaime', 'Xue Qian', 'Yi Qiang', 'Yiew Hsien', 'Yip Hang', 'Yuan', 'Yuanruo', 'Yueh', 'Yung Shen', 'Zhe Yuan', 'Zheng Yang', 'Zhi Jie', 'Zonghan', 'Chee Seng', 'Cheng Yu', 'Ngiap Heng', 
-        'Tee Seng', 'Boon Hui', 'JK', 'Teck Heng', 'Koon Tan', 'Kiong Tan', 'Hong Boon'
+        'Jia Shuo', 'Cheng Sean', 'Chier Wei', 'Hua Yi', 'Eng Siang', 'Hong Kiat', 'Jian Song', 'Jie Hao', 'Jinrong', 
+        'Kai Wen', 'Ming', 'Ming Gui', 'Rong', 'Ta-Wei', 'Teng Kiat', 'Wei', 'Wei Jie', 'Wei Quan', 'Wei Shaun', 
+        'Weiliang ', 'Wei-Lun', 'Wen Loong', 'Wen Loong', 'Xianyi', 'Xin Jaime', 'Xue Qian', 'Yi Qiang', 'Yiew Hsien', 
+        'Yip Hang', 'Yuan', 'Yuanruo', 'Yueh', 'Yung Shen', 'Zhe Yuan', 'Zheng Yang', 'Zhi Jie', 'Zonghan', 'Chee Seng', 
+        'Cheng Yu', 'Ngiap Heng', 'Tee Seng', 'Boon Hui', 'JK', 'Teck Heng', 'Koon Tan', 'Kiong Tan', 'Hong Boon', 
+        'Kok Hwee', 'Kok Wah', 'Kok Wee', 'Kok Sing', 'Kah How', 'Kah Hwee', 'Chee Keong', 'Chee How', 'Wee Leong', 
+        'Wee Meng', 'Wee Kiat', 'Wee Teck', 'Wee Tat', 'Wee Keong', 'Boon Kiat', 'Boon How', 'Boon Keong', 'Boon Tat',
+        'Guohui', 'Guohua', 'Guowei', 'Guoxing', 'Jiahao', 'Jiahui', 'Ziqiang', 'Zihao', 'Weiliang', 'Weiming', 'Weijie', 
+        'Weide', 'Weida', 'Weiqiang', 'Wenjie', 'Wenhao', 'Wenqiang'
+
+
+
 );
 
     protected static $englishNameMale = array(
@@ -133,7 +143,7 @@ class Person extends \Faker\Provider\Person
         'Sarah', 'Shasha', 'Sherilyn', 'Sheryl', 'Sophia', 'syiqah', 'Tan', 'Valerie', 'Vanessa', 'Vicky', 
         'Yvonne', 'Zeth', 'Ziqian', 'Abigail', 'Adeline', 'Adrienne',  'Aisha', 'Alana', 'Alexandra',  
         'Alice', 'Althea',  'Alysha','Amanda', 'Amy',  'Anabelle', 'Angelina',  'Anna',  'Anne',  'April', 'Ashley', 
-        'Beatrice', 'Berenice', 'Bernadette', 'Betty',   'Camille',  'Candice', 'Carole', 'Caroline', 'Cassandra', 
+        'Beatrice', 'Bernice', 'Bernadette', 'Betty',   'Camille',  'Candice', 'Carole', 'Caroline', 'Cassandra', 
         'Catherine', 'Cathy', 'Cecilia', 'Celine',  'Charlotte', 'Chloe', 'Christine',  'Claire', 'Connie', 'Constance', 
         'Cora', 'Corine', 'Cynthia', 'Dahlia', 'Dakota',  'Dana', 'Daniella',  'Daphne', 'Darlene', 'Desiree',  'Diana', 
         'Dora', 'Dorothy', 'Doris',  'Edwina', 'Eileen', 'Elaina', 'Eleanore',  'Elisa',  'Elizabeth',  'Elmira', 'Emily', 
@@ -152,9 +162,9 @@ class Person extends \Faker\Provider\Person
     'Chin' , 'Choi' , 'Choo' , 'Choy' , 'Chua' , 'Chye' , 'Ee' , 'Eng' , 'Fang' , 'Fong' , 'Foo' , 'Fu' , 'Gan' , 
     'Goh' , 'Guo' , 'Han' , 'Ho' , 'Hong' , 'Hoon' , 'Kang' , 'Kee' , 'Khim' , 'Khoo' , 'Koh' , 'Kok' , 'Khor' , 
     'Kwok' , 'Lai' , 'Lam' , 'Lau' , 'Lee' , 'Leng' , 'Leong' , 'Leow' , 'Li' , 'Lieu' , 'Liew' , 'Lim' , 'Lin' , 'Ling' , 
-    'Loh' , 'Lok' , 'Low' , 'Loy' , 'Lum' , 'Lye' , 'Mok' , 'Neo' , ' Ng' , 'Ngiam' , 'Oh' , 
+    'Loh' , 'Lok' , 'Low' , 'Loy' , 'Lum' , 'Lye' , 'Mok' , 'Neo' , ' Ng' , 'Ngiam' , 'Oh' , 'Lim' , 
     'Ong' , ' Ooi' , 'Pang' , 'Peck' , 'Peh' , 'Pei' , 'Phua' , 'Poh' , 'Poon' , 'Quek' , 'Seow' , 'Sim' , 'Sng' , ' Soh' , 
-    'Sun' , 'Tan' , 'Tan' , 'Tan' , 'Tan' , 'Tan' , 
+    'Sun' , 'Tan' , 'Tan' , 'Tan' , 'Tan' , 'Tan' , 'Shum', 'Yip', 'Si', 'Yu', 'To', 
     'Tay' , 'Teh' , 'Teo' , 'Teoh' , 'Thia' , 'Toh' , 'Tong' , 'Toy' , 'Wee' , ' Wong' , 'Woo' , 
     'Cheah' , 'Yang' , 'Yao' , 'Yap' , ' Yeo' , 'Yeoh' , 'Yong' , 'Zhang' , 'Zhen' , ' Zhou' 
 
@@ -191,7 +201,7 @@ class Person extends \Faker\Provider\Person
         'Abidah', 'Adilah', 'Aisha', 'Aisyah', 'Azizah ', 'Afiqah', 'Badriah', 'Bahirah', 'Burairah ', 'Diana', 
         'Farah', 'Farihah', 'Fatimah', 'Farida', 'Hafsah', 'Hajar ', 'Hasna', 'Halima', 'Laila', 'Latifah', 
         'Nabila', 'Nabilah', 'Mariah', 'Mariam', 'Masyitah', 'Muslimah', 'Nabila', 'Nadya', 'Naimah', 
-        'Najah', 'Nazihah', 'Noor', 'Rahimah', 'Rahmah', 'Salma', 'Samihah', 'Sasha', 
+        'Najah', 'Nazihah', 'Noor', 'Rahimah', 'Rahmah', 'Salma', 'Samihah', 'Sasha', 'Nurul', 
         'Siti', 'Siti', 'Siti', 'Siti', 'Taibah ', 'Tamimah', 'Yasmin', 'Yumna ', 'Zahrah', 'Zaidah ', 'Zainab', 'Zubaidah'
 
     );
