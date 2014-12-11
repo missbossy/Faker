@@ -112,24 +112,24 @@ class Person extends \Faker\Provider\Person
         'Hayden',  'Henry','Herman', 'Holden', 'Howard', 'Hudson', 'Hugh', 'Hunter', 
         'Ian', 'Irving', 'Irwin', 'Ivan', 'Luke',
         'Jackson','Jake', 'Jameson',  'Jamie','Jarred', 'Jarvis',  'Jasper', 'Jeff', 'Jefferey',  'Jerald', 'Jerome', 'Jeromy', 
-         'Jimmy', 'Joe', 'Joel',  'Joesph', 'Joey', 'John', 'Johnathan', 'Johnathon', 'Jonas',  'Jonathan', 'Jonathon','Jordon',
-         'Joseph', 'Josh', 'Joshua', 'Joshuah', 'Josiah', 'Jovan', 'Julian', 'Justen', 
+        'Jimmy', 'Joe', 'Joel',  'Joesph', 'Joey', 'John', 'Johnathan', 'Johnathon', 'Jonas',  'Jonathan', 'Jonathon','Jordon',
+        'Joseph', 'Josh', 'Joshua', 'Joshuah', 'Josiah', 'Jovan', 'Julian', 'Justen', 
         'Kaden', 'Keaton', 'Keith', 'Kelvin', 'Ken', 'Kevin', 'Kenneth','Kenny', 'Kurt', 'Kurtis', 'Kyle', 
         'Lance', 'Lawrence', 'Lawson', 'Lenny','Leonard','Lewis', 'Lionel', 'Louis', 'Lucas', 'Lucian', 'Leon',
         'Mackenzie', 'Malcolm',  'Marc',  'Mark', 'Markus',  'Marshall', 'Martin', 'Marvin','Mathew', 'Mathias', 'Matt', 
         'Melvin', 'Mervin',  'Micheal', 'Michel', 'Mike', 'Morgan', 'Moses', 
-       'Nathan', 'Nathaniel', 'Neal', 'Ned', 'Neil', 'Nelson', 'Nicholas','Nick', 'Nigel', 
-       'Oswald', 'Oswaldo', 'Otto', 'Otis', 'Owen',
+        'Nathan', 'Nathaniel', 'Neal', 'Ned', 'Neil', 'Nelson', 'Nicholas','Nick', 'Nigel', 
+        'Oswald', 'Oswaldo', 'Otto', 'Otis', 'Owen',
         'Patrick', 'Paul',  'Pete', 'Philip', 'Preston', 
-       'Randal', 'Randy', 'Ray', 'Raymond', 'Reuben', 'Richard', 'Richmond', 'Rick', 'Riley', 'Robb',  'Robert',  'Robin', 'Rocky',
+        'Randal', 'Randy', 'Ray', 'Raymond', 'Reuben', 'Richard', 'Richmond', 'Rick', 'Riley', 'Robb',  'Robert',  'Robin', 'Rocky',
         'Roderick', 'Rodger','Roger','Roland', 'Roman', 'Ron',  'Rowan', 'Rowland', 'Roy', 'Rudy', 'Rupert', 'Russ', 'Russel', 'Russell', 'Rusty', 'Ryan', 'Ryley',
-       'Sam', 'Sammy', 'Samson',  'Scott', 'Sean',  'Seth', 'Shawn',  'Sheldon', 'Sonny', 'Spencer', 'Stan', 'Stanley', 'Stanton', 'Stefan', 'Stephan', 'Stephen',  'Sterling', 'Steve',  'Stewart', 'Stuart', 'Sylvester',
-       'Taylor', 'Ted', 'Terrence', 'Terry',  'Theo', 'Thomas', 'Timmothy', 'Timothy', 'Tom',  'Tony',
-      'Travis', 'Trevor',  'Turner','Tyler',    
-       'Vernon', 'Vicente', 'Victor', 'Vince', 'Vincent', 
-         'Wallace', 'Walter','Warren', 'Will', 'Willard', 'William', 'Wilmer', 'Wilson', 'Wilton',  'Winston', 'Wyatt',
+        'Sam', 'Sammy', 'Samson',  'Scott', 'Sean',  'Seth', 'Shawn',  'Sheldon', 'Sonny', 'Spencer', 'Stan', 'Stanley', 'Stanton', 'Stefan', 'Stephan', 'Stephen',  'Sterling', 'Steve',  'Stewart', 'Stuart', 'Sylvester',
+        'Taylor', 'Ted', 'Terrence', 'Terry',  'Theo', 'Thomas', 'Timmothy', 'Timothy', 'Tom',  'Tony',
+        'Travis', 'Trevor',  'Turner','Tyler',    
+        'Vernon', 'Vicente', 'Victor', 'Vince', 'Vincent', 
+        'Wallace', 'Walter','Warren', 'Will', 'Willard', 'William', 'Wilmer', 'Wilson', 'Wilton',  'Winston', 'Wyatt',
         'Xavier', 'Xander',
-         'Zachary','Zack',
+        'Zachary','Zack',
     );
 
     protected static $englishNameFemale = array(
@@ -190,15 +190,15 @@ class Person extends \Faker\Provider\Person
     );
 
     protected static $malayNameMale = array(
-        'Adam', 'Adi ', 'Ahmad', 'Aidan', 'Amar', 'Aqil', 'Aryan', 'Ashraff', 'Daniel', 'Danish', 'Effendy', 'Farish', 
-        'Haziq', 'Imran', 'Irfan', 'Ishak ', 'Khalish', 'Mikhail', 'Mohamed', 'Nafiz', 'Rai ', 'Rayyan', 
-        'Ridwan', 'Sabtu ', 'Sam', 'Taufik', 'Thaqif', 'Umar', 'Yusuf', 'Zikri', 'Samir', 'Rashad', 'Abdul',  'Ahmad', 'Ahmed',
+        'Adam', 'Adi', 'Ahmad', 'Aidan', 'Amar', 'Aqil', 'Aryan', 'Ashraff', 'Daniel', 'Danish', 'Effendy', 'Farish', 
+        'Haziq', 'Imran', 'Irfan', 'Ishak', 'Khalish', 'Mikhail', 'Mohamed', 'Nafiz', 'Rai', 'Rayyan', 
+        'Ridwan', 'Sabtu', 'Sam', 'Taufik', 'Thaqif', 'Umar', 'Yusuf', 'Zikri', 'Samir', 'Rashad', 'Abdul',  'Ahmad', 'Ahmed',
         'Akeem', 'Ali', 'Amir', 'Ari',  'Hassan', 'Hiram', 'Ibrahim', 'Khalil','Mohamed', 'Mohammad', 'Mohammed', 'Muhammad', 
         'Nasir', 'Raheem', 'Rahul', 
     );
 
     protected static $malayNameFemale = array(
-        'Abidah', 'Adilah', 'Aisha', 'Aisyah', 'Azizah ', 'Afiqah', 'Badriah', 'Bahirah', 'Burairah ', 'Diana', 
+        'Abidah', 'Adilah', 'Aisha', 'Aisyah', 'Azizah ', 'Afiqah', 'Badriah', 'Bahirah', 'Burairah', 'Diana', 
         'Farah', 'Farihah', 'Fatimah', 'Farida', 'Hafsah', 'Hajar ', 'Hasna', 'Halima', 'Laila', 'Latifah', 
         'Nabila', 'Nabilah', 'Mariah', 'Mariam', 'Masyitah', 'Muslimah', 'Nabila', 'Nadya', 'Naimah', 
         'Najah', 'Nazihah', 'Noor', 'Rahimah', 'Rahmah', 'Salma', 'Samihah', 'Sasha', 'Nurul', 

@@ -87,12 +87,12 @@ class Address extends \Faker\Provider\Address
         '{{towns}} {{streetSuffix}}'
     );
     protected static $streetAddressFormats = array(
-        '{{lorongAddress}} {{towns}}, {{flatNumberPrefix}}{{flatNumberSuffixa}}-{{flatNumberSuffixb}}',
-        '{{block}} {{majorEstates}} {{streetAddy}}, {{flatNumberPrefix}}{{flatNumberSuffixa}}-{{flatNumberSuffixb}}',
-        '{{block}} {{majorEstates}} {{streetAddy}}, {{flatNumberPrefix}}{{flatNumberSuffixa}}-{{flatNumberSuffixb}}',
-        '{{block}} {{majorEstates}} {{streetAddy}}, {{flatNumberPrefix}}{{flatNumberSuffixa}}-{{flatNumberSuffixb}}',
+        '{{block}} {{lorongAddress}} {{towns}}, {{flatNumberPrefix}}-{{flatNumberSuffix}}',
+        '{{block}} {{majorEstates}} {{streetAddy}}, {{flatNumberPrefix}}-{{flatNumberSuffix}}',
+        '{{block}} {{majorEstates}} {{streetAddy}}, {{flatNumberPrefix}}-{{flatNumberSuffix}}',
+        '{{block}} {{majorEstates}} {{streetAddy}}, {{flatNumberPrefix}}-{{flatNumberSuffix}}',
         '{{streetNumber}} Jalan {{jalanPlace}}',
-        '{{streetNumber}} {{streetName}} , {{flatNumberPrefix}}{{flatNumberSuffixa}}-{{flatNumberSuffixb}}',
+        '{{streetNumber}} {{streetName}}, {{flatNumberPrefix}}-{{flatNumberSuffix}}',
         '{{streetNumber}} {{streetName}}',
         '{{streetNumber}} {{streetName}}'
     );
@@ -111,22 +111,28 @@ class Address extends \Faker\Provider\Address
     'Blk 1##'
     );
 
-   protected static $lorongAddress = array('Blk 1## Lorong #');
-   protected static $street = array('Street ##');
+ 
+   protected static $lorongAddress = array('Lorong 1', 'Lorong 1#', 'Lorong 2', 'Lorong 3', 'Lorong 4', 'Lorong 5', 'Lorong 6', 'Lorong 7', 'Lorong 8');
+   protected static $street = array('Street 1#','Street 2#','Street 3#','Street 7#','Street 8#');
    protected static $block = array('Blk 1##','Blk 2##','Blk 3##','Blk 4##','Blk 1#','Blk 2#','Blk 3#','Blk 4#');
-   protected static $flatNumberPrefix = array('&num;0', '&num;1');
-   protected static $flatNumberSuffixa = array('#');
-   protected static $flatNumberSuffixb = array('##');
 
 
     public static function flatNumberPrefix() { 
-        return static::randomElement(static::$flatNumberPrefix);  }
+        $flatnum = rand(1,18);
+        if($flatnum<10) {
+            $flatnum = "0".$flatnum;
+        }
+        return '&num;'.$flatnum;
+    }
 
-    public static function flatNumberSuffixa() { 
-        return static::numerify(static::randomElement(static::$flatNumberSuffixa));  }
 
-    public static function flatNumberSuffixb() { 
-        return static::numerify(static::randomElement(static::$flatNumberSuffixb));  }
+    public static function flatNumberSuffix() { 
+        $flatnum = rand(1,45);
+        if($flatnum<10) {
+            $flatnum = "0".$flatnum;
+        }
+        return $flatnum;
+    }
 
 
     public static function block()
