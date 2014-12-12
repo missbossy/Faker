@@ -5,16 +5,11 @@ namespace Faker\Provider\en_SG;
    /**
      *  Includes NRIC, Citizenship and Country of Origin, Name tied to Salutation
      *  
-     *  $maleNameWithSalutation / $femaleNameWithSalutation - this creates a combo fullname plus first or last name salutation
-     *  that can be used in tandem. Otherwise the script generates random values for each and they do not
-     *  correspond to each other. With English names the first/last combo means that this is not an issues. But once
-     *  you mix chinese names in, it's not so easy to figure out which is the correct name to use in correspondance so it is better
-     *  to specify this directly
      *  
      */
 
 
-class Enhanced extends \Faker\Provider\Person
+class Enhanced extends \Faker\Provider\Base
 {
 
     /**
@@ -100,76 +95,6 @@ class Enhanced extends \Faker\Provider\Person
     }  
 
 
-    /**
-     * Name with Salutation - this creates a salutation based on a given name then feeds both back as a singale
-     * variable which can be split with an explode "|" function
-     */
-
-        protected static $maleNameWithSalutation = array(
-        '|{{englishNameMale}} {{chineseFamilyName}}',
-        '{{englishNameMale}} |{{chineseFamilyName}} (formal)',
-        '{{englishNameMale}} |{{chineseFamilyName}} (formal)',
-        '|{{englishNameMale}} {{chineseFamilyName}}',
-        '{{englishNameMale}} |{{chineseFamilyName}} (formal)',
-        '{{englishNameMale}} |{{chineseFamilyName}} (formal)',
-        '{{englishNameMale}} |{{chineseFamilyName}} (formal)',
-        '{{chineseFamilyName}} {{chineseNameMale}} |{{englishNameMale}}',
-        '|{{englishNameMale}} {{chineseFamilyName}} {{chineseNameMale}}',
-        '|{{chineseFamilyName}} {{chineseNameMale}} (formal)',
-        '|{{malayNameMale}} {{malayFamilyName}}',
-        '{{englishNameMale}} |{{mixedfamilyName}} (formal)',
-    );
-
-   
-        protected static $femaleNameWithSalutation = array(
-        '|{{englishNameFemale}} {{chineseFamilyName}}',
-        '{{englishNameFemale}} |{{chineseFamilyName}} (formal)',
-        '{{englishNameFemale}} |{{chineseFamilyName}} (formal)',
-        '|{{englishNameFemale}} {{chineseFamilyName}}',
-        '{{englishNameFemale}} |{{chineseFamilyName}} (formal)',
-        '{{englishNameFemale}} |{{chineseFamilyName}} (formal)',
-        '{{englishNameFemale}} |{{chineseFamilyName}} (formal)',
-        '{{chineseFamilyName}} {{chineseNameFemale}} |{{englishNameFemale}}',
-        '|{{englishNameFemale}} {{chineseFamilyName}} {{chineseNameFemale}}',
-        '|{{chineseFamilyName}} {{chineseNameMale}} (formal)',
-        '|{{malayNameFemale}} {{malayFamilyName}}',
-        '{{englishNameFemale}} |{{mixedfamilyName}} (formal)',
-    );     
-
-     public function nameWithSalutation($gender='female')
-    {
-        if($gender=='female'){
-        $input =  static::randomElement(static::$femaleNameWithSalutation);
-        } else {
-        $input =  static::randomElement(static::$maleNameWithSalutation);
-
-        }
-        $haystack = $this->generator->parse($input);
-
-        // determine if there will be a formal or informal greeting
-        
-        $needle = "(formal)";
-        if(strpos($haystack, $needle))
-            {
-                    if($gender=='female'){
-                    $prefix = static::randomElement(static::$titleFemale)." "; 
-                    } else {
-                    $prefix = static::randomElement(static::$titleMale)." ";
-                    }
-  
-            } else {
-                $prefix = ""; 
-            }
-        
-        $haystack = str_replace ($needle,"",$haystack);
-        $start = strpos($haystack, "|"); 
-        $end =  strpos($haystack, " ", $start);
-        $salutation = trim(substr($haystack, $start+1, $start+$end));
-        $fullname = trim(str_replace ("|","",$haystack));
-        $format = $fullname."|".$prefix.$salutation;
-
-        return $this->generator->parse($format);
-     }   
 
 
     protected static $localFreeEmailDomain = array(
