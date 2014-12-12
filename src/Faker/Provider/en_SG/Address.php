@@ -77,6 +77,7 @@ class Address extends \Faker\Provider\Address
     );
 
 
+
     protected static $cityFormats = array(
         '{{cityPrefix}} {{firstName}}{{citySuffix}}',
         '{{cityPrefix}} {{firstName}}',
@@ -180,6 +181,7 @@ class Address extends \Faker\Provider\Address
     {
         return static::numerify(static::randomElement(static::$secondaryAddressFormats));
     }
+
 
 
 }
