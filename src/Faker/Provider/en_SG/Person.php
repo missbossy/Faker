@@ -7,26 +7,35 @@ namespace Faker\Provider\en_SG;
      *  between family name and given name that are too complex to be modelled here easily. Generally the format of the data
      *  will be accurate but the actually names may sometimes be unrealistic
      *
-     * I COULD USE HELP compiling the list of Chinese Male Names.  
      *
      */
 
 
 class Person extends \Faker\Provider\Person
 {
+
+
+
     protected static $maleNameFormats = array(
         '{{englishNameMale}} {{chineseFamilyName}}',
         '{{englishNameMale}} {{chineseFamilyName}}',
         '{{englishNameMale}} {{chineseFamilyName}}',
         '{{englishNameMale}} {{chineseFamilyName}}',
-        '{{chineseFamilyName}} {{chineseNameMale}}',
+        '{{englishNameMale}} {{chineseFamilyName}}',
+        '{{englishNameMale}} {{chineseFamilyName}}',
+        '{{englishNameMale}} {{chineseFamilyName}}',
         '{{chineseFamilyName}} {{chineseNameMale}} {{englishNameMale}}',
         '{{englishNameMale}} {{chineseFamilyName}} {{chineseNameMale}}',
         '{{malayNameMale}} {{malayFamilyName}}',
         '{{englishNameMale}} {{mixedfamilyName}}',
     );
 
+
+
     protected static $femaleNameFormats = array(
+        '{{englishNameFemale}} {{chineseFamilyName}}',
+        '{{englishNameFemale}} {{chineseFamilyName}}',
+        '{{englishNameFemale}} {{chineseFamilyName}}',
         '{{englishNameFemale}} {{chineseFamilyName}}',
         '{{englishNameFemale}} {{chineseFamilyName}}',
         '{{englishNameFemale}} {{chineseFamilyName}}',
@@ -67,7 +76,7 @@ class Person extends \Faker\Provider\Person
         'Poh Chan', 'Poh Choo', 'Poh Choo', 'Poh Eng', 'Poh Fun', 'Poh Gek', 'Poh Wan', 'Poh Yen', 'Puay Sian', 'Pui Lim', 
         'Pui Yee', 'Qing Jing', 'Qing Yi', 'Quee Lan', 'Ruo Fan', 'Sai Huay', 'Sai Yang', 'Say Pin', 'See Chin', 'See Hui', 
         'See Kew', 'See Ngoh', 'See Ping', 'Seen Kwun', 'Seok Eng', 'Seok Hui', 'Seok Keim', 'Seow Cheng', 'Seow Leng', 
-        'Serbito', 'Shan Li', 'Shi Hmin', 'Shiwen', 'Shu-Ting', 'Shwu Fen', 'Si En', 'Si Qi', 'Si Ting', 'Si Ting', 'Sidhu', 
+        'Shan Li', 'Shi Hmin', 'Shiwen', 'Shu-Ting', 'Shwu Fen', 'Si En', 'Si Qi', 'Si Ting', 'Si Ting', 'Sidhu', 
         'Sie May', 'Siew Cheng', 'Siew Girk', 'Siew Hong', 'Siew Hoon', 'Siew Hui', 'Siew Ing', 'Siew Ju', 'Siew Kheng', 
         'Siew Kim', 'Siew Li', 'Siew Lian', 'Siew Mee', 'Siew Mee', 'Siew Ping', 'Siew Wei', 'Sim Nam', 'Sing Kee', 
         'Siok Hoon', 'Siow Nee', 'Sock Hiang', 'Soek Ngee', 'Soh Hoon', 'Soh Hua', 'Soi Moi', 'Sok Hong', 'Sok Huay', 
@@ -94,9 +103,6 @@ class Person extends \Faker\Provider\Person
         'Wee Meng', 'Wee Kiat', 'Wee Teck', 'Wee Tat', 'Wee Keong', 'Boon Kiat', 'Boon How', 'Boon Keong', 'Boon Tat',
         'Guohui', 'Guohua', 'Guowei', 'Guoxing', 'Jiahao', 'Jiahui', 'Ziqiang', 'Zihao', 'Weiliang', 'Weiming', 'Weijie', 
         'Weide', 'Weida', 'Weiqiang', 'Wenjie', 'Wenhao', 'Wenqiang'
-
-
-
 );
 
     protected static $englishNameMale = array(
@@ -134,18 +140,18 @@ class Person extends \Faker\Provider\Person
 
     protected static $englishNameFemale = array(
         'Abigail', 'Adelia', 'Adlina', 'Alexis', 'Alicia', 'Alvira', 'Amanda', 'Angeline', 'Ashley', 'Ava', 
-        'Azusa', 'Beth', 'Cathy', 'Charmaine', 'Cherilyn', 'Cheryl', 'Chloe', 'Chloe', 'Christina', 'Chun Yi', 'Claire', 
-        'Claudia', 'Dorothy', 'Dolores', 'Elaine', 'Ellyza', 'Emma', 'Emma', 'Estelle', 'Esther', 'Eunice', 'Faith', 'Fatin', 'Felicia', 
-        'Feuer', 'Fiona', 'Gemmie', 'Gina', 'Grace', 'Hafizah', 'HuiLin', 'Isabella', 'Jamie', 'Jane', 'Jasmine', 'Jeannie', 
+        'Azusa', 'Beth', 'Cathy', 'Charmaine', 'Cherilyn', 'Cheryl', 'Chloe', 'Chloe', 'Christina', 'Claire', 
+        'Claudia', 'Dorothy', 'Dolores', 'Elaine', 'Emma', 'Emma', 'Estelle', 'Esther', 'Eunice', 'Faith', 'Fatin', 'Felicia', 
+        'Feuer', 'Fiona', 'Gemmie', 'Gina', 'Grace', 'Hafizah', 'Isabella', 'Jamie', 'Jane', 'Jasmine', 'Jeannie', 
         'Joey', 'Jolene', 'Judy', 'Julia', 'Kimberly', 'Kristen', 'Leah', 'Lee', 'Lily', 'Lena', 'Ling', 'Luna', 'Lynn', 
-        'Ma', 'Madison', 'Marion', 'Mayumi Shay', 'Mayyin', 'Michelle', 'Min', 'Mindy', 'Mitchie',  
+        'Ma', 'Madison', 'Marion', 'Michelle', 'Min', 'Mindy', 'Mitchie',  
         'Nasuha', 'Natalie', 'Nicole', 'Olivia', 'Preeti', 'Rachel', 'Rebecca', 'Regina', 'Rena', 'Renie', 
-        'Sarah', 'Shasha', 'Sherilyn', 'Sheryl', 'Sophia', 'syiqah', 'Tan', 'Valerie', 'Vanessa', 'Vicky', 
-        'Yvonne', 'Zeth', 'Ziqian', 'Abigail', 'Adeline', 'Adrienne',  'Aisha', 'Alana', 'Alexandra',  
+        'Sarah', 'Shasha', 'Sherilyn', 'Sheryl', 'Sophia', 'Valerie', 'Vanessa', 'Vicky', 
+        'Yvonne', 'Abigail', 'Adeline', 'Adrienne',  'Aisha', 'Alana', 'Alexandra',  
         'Alice', 'Althea',  'Alysha','Amanda', 'Amy',  'Anabelle', 'Angelina',  'Anna',  'Anne',  'April', 'Ashley', 
         'Beatrice', 'Bernice', 'Bernadette', 'Betty',   'Camille',  'Candice', 'Carole', 'Caroline', 'Cassandra', 
         'Catherine', 'Cathy', 'Cecilia', 'Celine',  'Charlotte', 'Chloe', 'Christine',  'Claire', 'Connie', 'Constance', 
-        'Cora', 'Corine', 'Cynthia', 'Dahlia', 'Dakota',  'Dana', 'Daniella',  'Daphne', 'Darlene', 'Desiree',  'Diana', 
+        'Cora', 'Corinne', 'Cynthia', 'Dahlia', 'Dakota',  'Dana', 'Daniella',  'Daphne', 'Darlene', 'Desiree',  'Diana', 
         'Dora', 'Dorothy', 'Doris',  'Edwina', 'Eileen', 'Elaina', 'Eleanore',  'Elisa',  'Elizabeth',  'Elmira', 'Emily', 
         'Emma', 'Erica',  'Esther',  'Eugenia', 'Eunice',  'Felicia', 'Frederique', 'Devi', 'Dora', 'Gabriella',  'Georgina', 
         'Gladys', 'Glenda', 'Grace', 'Hanna', 'Hannah',  'Heather', 'Helen','Hillary', 'Imelda',  'Isabell', 'Jacky', 'Jaclyn',  
@@ -199,13 +205,11 @@ class Person extends \Faker\Provider\Person
 
     protected static $malayNameFemale = array(
         'Abidah', 'Adilah', 'Aisha', 'Aisyah', 'Azizah ', 'Afiqah', 'Badriah', 'Bahirah', 'Burairah', 'Diana', 
-        'Farah', 'Farihah', 'Fatimah', 'Farida', 'Hafsah', 'Hajar ', 'Hasna', 'Halima', 'Laila', 'Latifah', 
+        'Farah', 'Farihah', 'Fatimah', 'Farida', 'Hafsah', 'Hajar', 'Hasna', 'Halima', 'Laila', 'Latifah', 
         'Nabila', 'Nabilah', 'Mariah', 'Mariam', 'Masyitah', 'Muslimah', 'Nabila', 'Nadya', 'Naimah', 
         'Najah', 'Nazihah', 'Noor', 'Rahimah', 'Rahmah', 'Salma', 'Samihah', 'Sasha', 'Nurul', 
-        'Siti', 'Siti', 'Siti', 'Siti', 'Taibah ', 'Tamimah', 'Yasmin', 'Yumna ', 'Zahrah', 'Zaidah ', 'Zainab', 'Zubaidah'
-
+        'Siti', 'Siti', 'Siti', 'Siti', 'Taibah', 'Tamimah', 'Yasmin', 'Yumna', 'Zahrah', 'Zaidah ', 'Zainab', 'Zubaidah'
     );
-
 
 
     /**
@@ -266,48 +270,12 @@ class Person extends \Faker\Provider\Person
     }
     
 
-    public function province()
+    public function femaleNameWithSalutation()
     {
-        return static::randomElement(static::$province);
-    }
-
- 
-    /**
-     * NRIC - this does not do a strict calculatin of NRIC using the checksum constraints of actual numbers
-     * For details on the checksum constraints, see here: http://www.arjun.com.np/blog/all-about-nric-number-in-singapore/
-     */
-
-
-    private static $nricPrefix = array(
-        'S#######','S#######', 'S#######','S#######','S#######',
-        'S#######','S#######', 'S#######','S#######','S#######',
-        'S#######','S#######', 'S#######','S#######','S#######',
-        'S#######','S#######', 'T#######','F#######','G#######',
-        );
-
-    private static $nricSuffix = array(
-        'J', 'Z', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A', 
-        'X', 'W', 'U', 'T', 'R', 'Q', 'P', 'N', 'M', 'L', 'K', 
-        );
-
-   protected static $nric = array(
-        '{{nricPrefix}}{{nricSuffix}}'
-    );
-
-    public function nricPrefix()
-    {
-        return static::numerify(static::randomElement(static::$nricPrefix));
-    }
-
-    public function nricSuffix()
-    {
-        return static::randomElement(static::$nricSuffix);
-    }
-
-    public function nric()
-    {
-        $format = static::randomElement(static::$nric);
+        $format = static::randomElement(static::$femaleNameWithSalutation);
         return $this->generator->parse($format);
     }
+
+
 
 }
